@@ -2,7 +2,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/learning-from-rich-semantics-and-coarse/object-detection-on-lvis-v1-0-val)](https://paperswithcode.com/sota/object-detection-on-lvis-v1-0-val?p=learning-from-rich-semantics-and-coarse)
 
-[NeruIPS23] This is the official implementation of the paper "[Learning from Rich Semantics and Coarse Locations for Long-tailed Object Detection](https://arxiv.org/abs/2203.03605)". 
+[NeruIPS23] This is the official implementation of the paper "[Learning from Rich Semantics and Coarse Locations for Long-tailed Object Detection](https://arxiv.org/abs/2310.12152)". 
 
 ## Introduction
 ![teaser](assets/arch.png)
