@@ -14,8 +14,8 @@ In this paper, we propose RichSem, a simple but effective method, which is robus
 
 | Model  | Backbone | Extra data| Epochs | Box AP | Box AP^r | Config | Download |
 | ------ | -------- |-------- | ------- | ------ | ------ | ----- | ----- |
-| RichSem | R50 | INet-LVIS |24 | 37.1 | 29.9 |[config](config/RichSem/richsem_4scale.py) | [model]() |
-| RichSem | R50 ([21k pretrained](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/resnet50_miil_21k.pth)) | INet-LVIS | 24 | 40.1 | 36.1 | [config](config/RichSem/richsem_4scale.py) | [model]() |
+| RichSem | R50 | INet-LVIS |24 | 37.1 | 29.9 |[config](config/RichSem/richsem_4scale.py) | [model(TODO)]() |
+| RichSem | R50 ([21k pretrained](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/resnet50_miil_21k.pth)) | INet-LVIS | 24 | 40.1 | 36.1 | [config](config/RichSem/richsem_4scale_r5021k.py) | [model](https://huggingface.co/menglc/RichSem/blob/main/richsem_r50_21kpretrained_2x.pth) |
 
 
 ## Running
@@ -34,7 +34,7 @@ cd $(pwd)
 ### Data
 The LVIS dataset and ImageNet dataset should be organized as:
 We preprocess ImageNet-21k to obtain imagenet_lvis_image_info.json following [Detic](https://github.com/facebookresearch/Detic/blob/main/tools/create_imagenetlvis_json.py).
-We also provide an already processed [imagenet_lvis_image_info.json]().
+We also provide an already processed [imagenet_lvis_image_info.json](https://huggingface.co/menglc/RichSem/blob/main/imagenet_lvis_image_info.json).
 
 ```
 RichSem
