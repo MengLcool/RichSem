@@ -1,6 +1,7 @@
 _base_ = ['data_transformer.py']
 
-num_classes=1024
+num_classes=1204
+dn_labelbook_size=1204
 
 lr = 0.0001
 param_dict_type = 'default'
@@ -103,7 +104,6 @@ dn_number = 100
 dn_box_noise_scale = 1.0
 dn_label_noise_ratio = 0.5
 embed_init_tgt = True
-dn_labelbook_size = 1024
 
 match_unstable_error = True
 
