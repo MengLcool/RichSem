@@ -14,8 +14,8 @@ In this paper, we propose RichSem, a simple but effective method, which is robus
 
 | Model  | Backbone | Extra data| Epochs | Box AP | Box AP^r | Config | Download |
 | ------ | -------- |-------- | ------- | ------ | ------ | ----- | ----- |
-| RichSem | R50 | INet-LVIS |24 | 37.1 | 29.9 |[config](config/RichSem/richsem_4scale.py) | [model(TODO)]() |
-| RichSem | R50 ([21k pretrained](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/resnet50_miil_21k.pth)) | INet-LVIS | 24 | 40.1 | 36.1 | [config](config/RichSem/richsem_4scale_r5021k.py) | [model](https://huggingface.co/menglc/RichSem/blob/main/richsem_r50_21kpretrained_2x.pth) |
+| RichSem | R50 | INet-LVIS |24 | 37.3 | 30.7 |[config](config/RichSem/richsem_4scale.py) | [model](https://huggingface.co/menglc/RichSem/resolve/main/richsem_r50_2x.pth) |
+| RichSem | [R50-21k](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/ImageNet_21K_P/models/resnet50_miil_21k.pth) | INet-LVIS | 24 | 40.1 | 36.1 | [config](config/RichSem/richsem_4scale_r5021k.py) | [model](https://huggingface.co/menglc/RichSem/resolve/main/richsem_r5021k_2x.pth) |
 
 
 ## Running
@@ -54,7 +54,7 @@ RichSem
 ### Training
 Train RichSem + ResNet-50 with 8 GPUs:
 ```
-bash scripts/richsem_dist.sh 8 --output_dir OUTPUT/RichSem/R50 -c config/RichSem/richsem_4scale.py --data_path <data_path> --options dn_box_noise_scale=1.0
+bash scripts/richsem_dist.sh 8 --output_dir OUTPUT/RichSem/R50 -c config/RichSem/richsem_4scale.py --data_path <data_path> --options clip_model=RN50
 ```
 ### Testing
 Test RichSem + ResNet-50 with 8 GPUs, and evaluate:
@@ -76,4 +76,5 @@ If you find this project useful for your research, please use the following BibT
   author={Meng, Lingchen and Dai, Xiyang and Yang, Jianwei and Chen, Dongdong and Chen, Yinpeng and Liu, Mengchen and Chen, Yi-Ling and Wu, Zuxuan and Yuan, Lu and Jiang, Yu-Gang},
   booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
   year={2023}
-}```
+}
+```
